@@ -5,7 +5,9 @@ A simple chrome extension to hold/add/remove information. Created by me because 
 ![image](https://github.com/user-attachments/assets/6a4139ac-1879-40e3-94c0-1489ddeffbfe)
 ### Configuration
 ```sh
-chrome://extension           (ON SEARCHBAR)
-enable developer mode           (TOP RIGHT)
-"load no compression"            (TOP LEFT)
+chrome://extension
+enable developer mode
+"load no compression"
 Finish by adding the directory and done! :D
+```
+For the above, in order :: (ON SEARCHBAR) -> (TOP RIGHT) -> (TOP LEFT)
