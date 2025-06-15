@@ -1,43 +1,81 @@
 body {
   width: 300px;
   font-family: Arial, sans-serif;
-  margin: 0px;
+  margin: 0;
+  padding: 0;
   background-color: rgb(0, 0, 21);
+  color: white;
 }
-input {
-  padding: 6px;
-  border: 1px solid black;
-  border-radius: 0px;
-  width: 70%;
-}
+
 #container {
   padding: 10px;
+  box-sizing: border-box;
 }
+
+.textarea-wrapper {
+  margin-bottom: 10px;
+  border: 1px solid #444;
+  padding: 8px;
+  border-radius: 4px;
+  background-color: rgb(10, 10, 35);
+}
+
+input {
+  padding: 6px;
+  border: 1px solid #444;
+  border-radius: 4px;
+  width: calc(100% - 85px);
+  margin-bottom: 5px;
+  background-color: rgb(20, 20, 45);
+  color: white;
+  box-sizing: border-box;
+}
+
 textarea {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', 'sans-serif';
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   width: 100%;
   height: 60px;
-  margin-bottom: 10px;
-  margin-top: 2px;
-  width: 97.4%;
-  border: 1px solid black;
-  overflow: hidden;
+  margin-top: 5px;
+  border: 1px solid #444;
+  border-radius: 4px;
+  resize: vertical;
+  background-color: rgb(20, 20, 45);
+  color: white;
+  box-sizing: border-box;
+  padding: 5px;
 }
+
 button {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', 'sans-serif';
-  margin-top: 10px;
-  margin-left: 3px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   background-color: rgb(218, 165, 32);
   font-weight: lighter;
   font-size: 15px;
-  border-radius: 3px;
-  padding: 7px;
-  border: 0px;
+  border-radius: 4px;
+  padding: 7px 12px;
+  border: none;
+  cursor: pointer;
+  color: black;
+  margin-right: 5px;
 }
+
 button:hover {
-  transition: background-color 0.10s;
-  transition: color 0.10s;
   background-color: rgb(105, 80, 18);
   color: white;
-  box-shadow: 0px 0px 2px black;
+  box-shadow: 0 0 2px black;
+}
+
+.remove-button {
+  float: right;
+  background-color: #d9534f;
+  color: white;
+}
+
+.remove-button:hover {
+  background-color: #c9302c;
+}
+
+#addTextarea {
+  width: 100%;
+  margin: 5px 0 0 0;
+  display: block;
 }
